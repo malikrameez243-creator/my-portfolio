@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MALIK RAMEEZ — Visual Storyteller & Code Architect. A dual-threat designer and full-stack developer crafting cinematic digital experiences." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>MALIK RAMEEZ · Visual Storyteller & Code Architect</title>
+
+  <!-- Preconnects for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <!-- Premium font stack -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Abstract Liquid Gradient Background -->
+<div class="gradient-bg">
+    <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+    </div>
+</div>
+  <!-- =================== CUSTOM CURSOR (DESKTOP) =================== -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- =================== SCROLL PROGRESS BAR =================== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- =================== PAGE NOISE / GRAIN OVERLAY =================== -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- =================== ANIMATED AMBIENT BACKGROUND =================== -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__orb ambient__orb--1"></div>
+    <div class="ambient__orb ambient__orb--2"></div>
+    <div class="ambient__orb ambient__orb--3"></div>
+  </div>
+
+  <!-- =================== NAVIGATION =================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" data-magnetic>
+        <span class="nav__logo-mark">M</span>
+        <span class="nav__logo-text">MALIK<span>.DEV</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" class="nav__link"><span>01</span>About</a>
+        <a href="#services" class="nav__link"><span>02</span>Services</a>
+        <a href="#work" class="nav__link"><span>03</span>Work</a>
+        <a href="#contact" class="nav__link"><span>04</span>Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta" data-magnetic>
+        <span class="nav__cta-text">Hire Me</span>
+        <span class="nav__cta-icon" aria-hidden="true">→</span>
+      </a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =================== HERO (CINEMATIC REEL) =================== -->
+  <section class="hero" id="home">
+    <!-- Cinematic video canvas (replace source with your reel) -->
+    <div class="hero__reel">
+      <div class="hero__video" id="heroVideo" role="img" aria-label="Cinematic intro reel of Malik Rameez"></div>
+
+      <!-- Letterbox bars for cinematic feel -->
+      <div class="hero__letterbox hero__letterbox--top"></div>
+      <div class="hero__letterbox hero__letterbox--bottom"></div>
+
+      <!-- Cinematic overlays -->
+      <div class="hero__vignette"></div>
+      <div class="hero__scanlines"></div>
+
+      <!-- Reel HUD (heads-up display) -->
+      <div class="hero__hud">
+        <div class="hud__rec">
+          <span class="hud__rec-dot"></span>
+          <span>REC</span>
+        </div>
+        <div class="hud__time" id="hudTime">00:00:24</div>
+        <div class="hud__track">CH 01 · MALIK RAMEEZ · CINEMATIC PORTFOLIO</div>
+        <div class="hud__meta">4K · 24FPS · HDR</div>
+      </div>
+
+      <!-- Timeline / progress strip -->
+      <div class="hero__timeline">
+        <div class="hero__timeline-track"></div>
+        <div class="hero__timeline-fill" id="heroTimelineFill"></div>
+        <div class="hero__timeline-marker" style="left: 18%"></div>
+        <div class="hero__timeline-marker" style="left: 42%"></div>
+        <div class="hero__timeline-marker" style="left: 67%"></div>
+        <div class="hero__timeline-marker" style="left: 89%"></div>
+      </div>
+    </div>
+
+    <!-- Foreground hero content -->
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="hero__pulse"></span>
+        <span>Available for new projects · 2026</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__line" data-text="MALIK">
+          <span class="hero__word">MALIK</span>
+        </span>
+        <span class="hero__line hero__line--accent" data-text="RAMEEZ">
+          <span class="hero__word">RAMEEZ</span>
+        </span>
+      </h1>
+
+      <p class="hero__subtitle">
+        <span class="hero__chip">Visual Storyteller</span>
+        <span class="hero__amp">&</span>
+        <span class="hero__chip hero__chip--alt">Code Architect</span>
+      </p>
+
+      <p class="hero__lede">
+        I engineer cinematic brand identities and ship full-stack web applications that make audiences stop scrolling. Strategy on the left brain, stunts on the right.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary" data-magnetic>
+          <span class="btn__label">View My Work</span>
+          <span class="btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          <span class="btn__glow"></span>
+        </a>
+        <a href="#contact" class="btn btn--ghost" data-magnetic>
+          <span class="btn__label">Start a Project</span>
+        </a>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num" data-count="120">0</div>
+          <div class="stat__label">Projects Shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="48">0</div>
+          <div class="stat__label">Global Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="2">0</div>
+          <div class="stat__label">Years in the Lab</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">/ 01 — About</span>
+        <h2 class="section__title">
+          A dual-threat operator <br />
+          <span class="section__title-accent">at the intersection of pixels & code.</span>
+        </h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__media">
+          <div class="about__portrait">
+            <div class="about__portrait-frame">
+              <!-- Placeholder portrait — swap with your own image -->
+      <div class="about__portrait-img about-avatar-fallback">
+      <img src="my-pic.jpeg" alt="Malik Rameez" class="profile-img">
+      </div>              <div class="about__portrait-tag">
+                <span class="about__portrait-tag-dot"></span>
+                Studio · On Air
+              </div>
+            </div>
+            <div class="about__portrait-glow"></div>
+
+            <div class="about__badges">
+              <div class="badge">
+                <span class="badge__icon">⚡</span>
+                <span class="badge__text">Brand Strategist</span>
+              </div>
+              <div class="badge">
+                <span class="badge__icon">◆</span>
+                <span class="badge__text">Full-Stack Dev</span>
+              </div>
+              <div class="badge">
+                <span class="badge__icon">◎</span>
+                <span class="badge__text">AI Tinkerer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__copy">
+          <p class="about__lead">
+            I'm <strong>Malik Rameez</strong> — a graphic designer by intuition, a full-stack developer by obsession, and a storyteller by default. I build brands that look as sharp as the code that powers them, and I ship web experiences that feel less like websites and more like <em>interactive films</em>.
+          </p>
+          <p>
+            For the last 2 years I've been blending <span class="hl">type, motion, and architecture</span> into work for startups, studios, and the occasional Fortune 500. My toolkit spans Figma, After Effects, Node, React, and whatever new AI model decided to drop this week. I like clean grids, buttery animations, and clients who say "make it <em>cooler</em>."
+          </p>
+          <p>
+            When I'm not pushing pixels or squashing bugs, I'm usually prototyping a side project, reading about typography history, or convincing my cat that the keyboard is not a bed. If you've got a vision that needs both an artist's eye and an engineer's brain — <a href="#contact" class="link">let's build it</a>.
+          </p>
+
+          <ul class="about__list">
+            <li><span>✦</span> Brand identity & packaging systems</li>
+            <li><span>✦</span> Modern web apps · React · Node · Next.js</li>
+            <li><span>✦</span> Motion, micro-interactions & 3D</li>
+            <li><span>✦</span> AI-powered product experiences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SERVICES =================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">/ 02 — Services</span>
+        <h2 class="section__title">
+          Three disciplines, <br />
+          <span class="section__title-accent">one ridiculously obsessive brain.</span>
+        </h2>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- CARD 1 — DESIGN -->
+        <article class="service-card" data-tilt>
+          <div class="service-card__num">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="6" width="52" height="52" rx="4"/>
+              <path d="M6 22h52M22 22v36M40 6v16M6 46h52"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Graphic &amp; Packaging Design</h3>
+          <p class="service-card__desc">Brand identities, UI/UX systems, and packaging that earn shelf-space and feed-scroll attention. Pixel-precise, strategy-led, ridiculously on-brand.</p>
+          <ul class="service-card__tags">
+            <li>Brand Identity</li>
+            <li>UI / UX</li>
+            <li>Packaging</li>
+            <li>Marketing Collateral</li>
+            <li>Typography</li>
+          </ul>
+          <div class="service-card__glow"></div>
+        </article>
+
+        <!-- CARD 2 — DEV -->
+        <article class="service-card service-card--featured" data-tilt>
+          <div class="service-card__badge">Most Requested</div>
+          <div class="service-card__num">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 18L8 32l14 14M42 18l14 14-14 14M36 12l-8 40"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Full-Stack Web Development</h3>
+          <p class="service-card__desc">From interactive marketing sites to full SaaS platforms — production-grade web apps that are fast, accessible, and built to scale without flinching.</p>
+          <ul class="service-card__tags">
+            <li>Node.js</li>
+            <li>React / Next.js</li>
+            <li>TypeScript</li>
+            <li>Postgres</li>
+            <li>Edge &amp; Serverless</li>
+          </ul>
+          <div class="service-card__glow"></div>
+        </article>
+
+        <!-- CARD 3 — AI -->
+        <article class="service-card" data-tilt>
+          <div class="service-card__num">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="32" r="6"/>
+              <path d="M32 6v8M32 50v8M6 32h8M50 32h8M13 13l6 6M45 45l6 6M13 51l6-6M45 19l6-6"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">AI &amp; Automation Integration</h3>
+          <p class="service-card__desc">Practical AI woven into real products — LLM workflows, intelligent content pipelines, and automations that turn busywork into one-click magic.</p>
+          <ul class="service-card__tags">
+            <li>LLM Integrations</li>
+            <li>Workflow Bots</li>
+            <li>Computer Vision</li>
+            <li>Vector Search</li>
+            <li>Custom GPTs</li>
+          </ul>
+          <div class="service-card__glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PORTFOLIO =================== -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">/ 03 — Selected Work</span>
+        <h2 class="section__title">
+          A reel of recent <br />
+          <span class="section__title-accent">heists, builds &amp; experiments.</span>
+        </h2>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="work__filters" role="tablist">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All <span>08</span></button>
+        <button class="filter" data-filter="design" role="tab">Design <span>04</span></button>
+        <button class="filter" data-filter="dev" role="tab">Development <span>03</span></button>
+        <button class="filter" data-filter="ai" role="tab">AI / Automation <span>01</span></button>
+      </div>
+
+      <!-- Grid -->
+      <div class="work__grid" id="workGrid">
+
+        <a href="#" class="work-card" data-cat="design" data-tilt>
+         <div class="work-card__media" style="position: relative; width: 100%; height: 480px; overflow: hidden; background: #000;">
+                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <source src="ramiz-ai.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+        <a href="#" class="work-card" data-cat="dev" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">Web App</span>
+            <h3 class="work-card__title">Nimbus — SaaS Analytics Dashboard</h3>
+            <p class="work-card__desc">Real-time analytics platform built with Next.js, Postgres and a custom design system.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+        <a href="#" class="work-card" data-cat="design" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1558655146-d09347e92766?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">UI / UX</span>
+            <h3 class="work-card__title">Halo Banking — Mobile Experience</h3>
+            <p class="work-card__desc">A neo-bank redesign focused on clarity, motion and zero-friction money moves.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+        <a href="#" class="work-card" data-cat="ai" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">AI / Automation</span>
+            <h3 class="work-card__title">Echo — AI Content Engine</h3>
+            <p class="work-card__desc">LLM-powered platform that turns brand voice guidelines into weeks of on-brand content.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+        <a href="#" class="work-card" data-cat="dev" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">Interactive Site</span>
+            <h3 class="work-card__title">Vertex Studio — Creative Agency</h3>
+            <p class="work-card__desc">Award-worthy agency site with WebGL transitions, custom cursor and a CMS-driven case-study engine.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+        <a href="#" class="work-card" data-cat="design" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">Type Design</span>
+            <h3 class="work-card__title">Drift Display — Variable Typeface</h3>
+            <p class="work-card__desc">An experimental display family exploring weight, slant and optical size as expressive axes.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+        <a href="#" class="work-card" data-cat="dev" data-tilt>
+          <div class="work-card__media" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80')"></div>
+          <div class="work-card__overlay">
+            <span class="work-card__tag">Web App</span>
+            <h3 class="work-card__title">Helix — Crypto Portfolio Tracker</h3>
+            <p class="work-card__desc">Real-time portfolio tracking with custom charting, alerts and a focus on calm information density.</p>
+            <span class="work-card__cta">View Case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__index">/ 04 — Let's Connect</span>
+        <h2 class="section__title">
+          Got a wild idea? <br />
+          <span class="section__title-accent">Let's make it internet-famous.</span>
+        </h2>
+        <p class="section__lede">
+          I'm currently booking select projects for Q2 2026. Drop a note — I usually reply within 24 hours, often sooner (and usually caffeinated).
+        </p>
+      </div>
+
+      <div class="contact__grid">
+
+        <!-- FORM -->
+        <form action="https://formsubmit.co/malikrameez243@gmail.com" method="POST" class="contact__form">
+    
+    <!-- Redirect waapas aapki local site par lane ke liye -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+    <!-- Name Input -->
+    <div class="contact__form-div">
+        <label class="contact__form-tag">Full Name</label>
+        <input type="text" name="name" class="contact__form-input" placeholder="Insert your name" required>
+    </div>
+
+    <!-- Email Input -->
+    <div class="contact__form-div">
+        <label class="contact__form-tag">Your Email</label>
+        <input type="email" name="email" class="contact__form-input" placeholder="Insert your email" required>
+    </div>
+
+    <!-- Service Selection (30 Categories) -->
+    <div class="contact__form-div">
+        <label class="contact__form-tag">Select a Service</label>
+        <select name="service" class="contact__form-input" required style="background: transparent; color: inherit; border: none; width: 100%; outline: none;">
+            <option value="" style="background-color: #1a1a1a; color: #fff;">Pick a service</option>
+            
+            <!-- WEB DEVELOPMENT & CODING -->
+            <option value="Custom Web Development" style="background-color: #1a1a1a; color: #fff;">Custom Web Development</option>
+            <option value="E-commerce Store (Node.js/Next.js)" style="background-color: #1a1a1a; color: #fff;">E-commerce Store (Node.js/Next.js)</option>
+            <option value="Portfolio Website Design" style="background-color: #1a1a1a; color: #fff;">Portfolio Website Design</option>
+            <option value="Business & Corporate Website" style="background-color: #1a1a1a; color: #fff;">Business & Corporate Website</option>
+            <option value="Landing Page Optimization" style="background-color: #1a1a1a; color: #fff;">Landing Page Optimization</option>
+            <option value="Full-Stack Web Application" style="background-color: #1a1a1a; color: #fff;">Full-Stack Web Application</option>
+            <option value="WordPress Website Development" style="background-color: #1a1a1a; color: #fff;">WordPress Website Development</option>
+            <option value="Shopify Store Setup & Design" style="background-color: #1a1a1a; color: #fff;">Shopify Store Setup & Design</option>
+            <option value="Web App Frontend (React/HTML/CSS)" style="background-color: #1a1a1a; color: #fff;">Web App Frontend (React/HTML/CSS)</option>
+            <option value="Backend Development & API Integration" style="background-color: #1a1a1a; color: #fff;">Backend Development & API Integration</option>
+            <option value="AI Assistant Integration (Ollama/Local AI)" style="background-color: #1a1a1a; color: #fff;">AI Assistant Integration (Ollama/Local AI)</option>
+            <option value="Website Speed & Performance Optimization" style="background-color: #1a1a1a; color: #fff;">Website Speed & Performance Optimization</option>
+            
+            <!-- GRAPHIC DESIGN & BRANDING -->
+            <option value="Custom Logo Design" style="background-color: #1a1a1a; color: #fff;">Custom Logo Design</option>
+            <option value="Brand Identity & Style Guides" style="background-color: #1a1a1a; color: #fff;">Brand Identity & Style Guides</option>
+            <option value="Product Packaging & Box Design" style="background-color: #1a1a1a; color: #fff;">Product Packaging & Box Design</option>
+            <option value="Trifold Brochure & Flyer Design" style="background-color: #1a1a1a; color: #fff;">Trifold Brochure & Flyer Design</option>
+            <option value="Business Card & Stationery Design" style="background-color: #1a1a1a; color: #fff;">Business Card & Stationery Design</option>
+            <option value="Social Media Post Design (Instagram/Facebook)" style="background-color: #1a1a1a; color: #fff;">Social Media Post Design (Instagram/Facebook)</option>
+            <option value="YouTube Thumbnail & Channel Branding" style="background-color: #1a1a1a; color: #fff;">YouTube Thumbnail & Channel Branding</option>
+            <option value="Vector Tracing & Illustration" style="background-color: #1a1a1a; color: #fff;">Vector Tracing & Illustration</option>
+            <option value="Banner & Signage Design" style="background-color: #1a1a1a; color: #fff;">Banner & Signage Design</option>
+            <option value="UI/UX Design (Figma to Code)" style="background-color: #1a1a1a; color: #fff;">UI/UX Design (Figma to Code)</option>
+
+            <!-- DIGITAL MARKETING & SEO -->
+            <option value="Search Engine Optimization (SEO)" style="background-color: #1a1a1a; color: #fff;">Search Engine Optimization (SEO)</option>
+            <option value="Google Search Console & Indexing Setup" style="background-color: #1a1a1a; color: #fff;">Google Search Console & Indexing Setup</option>
+            <option value="Social Media Management" style="background-color: #1a1a1a; color: #fff;">Social Media Management</option>
+            <option value="TikTok & Reels Video Editing" style="background-color: #1a1a1a; color: #fff;">TikTok & Reels Video Editing</option>
+
+            <!-- TECHNICAL SUPPORT & OTHERS -->
+            <option value="IT Consultation & Tech Support" style="background-color: #1a1a1a; color: #fff;">IT Consultation & Tech Support</option>
+            <option value="Computer Hardware/Software Troubleshooting" style="background-color: #1a1a1a; color: #fff;">Computer Hardware/Software Troubleshooting</option>
+            <option value="Bug Fixing & Code Maintenance" style="background-color: #1a1a1a; color: #fff;">Bug Fixing & Code Maintenance</option>
+            <option value="Other / Custom Inquiry" style="background-color: #1a1a1a; color: #fff;">Other / Custom Inquiry</option>
+        </select>
+    </div>
+
+    <!-- Message Textarea -->
+    <div class="contact__form-div contact__form-area">
+        <label class="contact__form-tag">Describe your project...</label>
+        <textarea name="message" cols="30" rows="10" class="contact__form-input" placeholder="Write your project details here..." required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="button Let's Talk" style="cursor: pointer;">Let's Talk →</button>
+
+</form>
+        <!-- SIDE PANEL -->
+        <aside class="contact__side">
+          <div class="contact__info">
+            <h3 class="contact__info-title">Direct lines</h3>
+            <a class="contact__info-item" href="mailto:malikrameez243@gmail.com">
+              <span class="contact__info-label">Email</span>
+              <span class="contact__info-value">malikrameez243@gmail.com</span>
+            </a>
+            <a class="contact__info-item" href="tel:+10000000000">
+              <span class="contact__info-label">Phone</span>
+              <span class="contact__info-value">+923353949762</span>
+            </a>
+            <a class="contact__info-item" href="#">
+              <span class="contact__info-label">Studio</span>
+              <span class="contact__info-value">Available Worldwide</span>
+            </a>
+          </div>
+
+          <!-- Social Media Icons Links Section -->
+<div class="socials">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/qr/EZX6BIUN6MGHE1" class="social" aria-label="WhatsApp" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.973 0c3.184.001 6.177 1.24 8.428 3.492 2.25 2.253 3.487 5.244 3.487 8.428 0 6.572-5.338 11.917-11.91 11.917-2.005-.002-3.98-.51-5.733-1.485L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864 0-2.637-1.03-5.114-2.902-6.986-1.872-1.873-4.348-2.903-6.983-2.903-5.439 0-9.865 4.422-9.87 9.865-.001 1.704.455 3.367 1.32 4.814l-.993 3.626 3.739-.98zM17.51 15.3l-.79-.395c-.42-.21-.714-.315-.935.042-.22.357-.84 1.05-.1.315.115.04.1.26.1.47 0 .21-.05.42-.21.63-.16.21-.63.84-1.21 1.346-.42.368-.84.473-1.155.315-.315-.157-1.313-.473-2.468-1.524-.892-.79-1.48-1.785-1.66-2.09-.18-.315-.02-.483.14-.64.14-.14.315-.368.473-.525.16-.157.21-.263.315-.473.105-.21.052-.42-.026-.578-.079-.158-.714-1.733-.98-2.363-.263-.63-.525-.525-.714-.525H8.38c-.21 0-.525.079-.788.368-.263.289-1.05 1.024-1.05 2.5a4.29 4.29 0 0 0 .893 2.31c.105.158 1.766 2.762 4.313 3.74.606.233 1.079.372 1.449.49.61.193 1.165.165 1.6.1.485-.072 1.49-.61 1.7-1.197.21-.588.21-1.092.148-1.197-.063-.105-.23-.168-.556-.325z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/malik_hn_ywrrr?igsh=MWU0am13M2xweXVlbw==" class="social" aria-label="Instagram" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+        </svg>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@malik_is_here__?_r=1&_t=ZS-97nnuzAlCSL" class="social" aria-label="TikTok" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.03 1.61 4.2 1.14 1.25 2.76 1.93 4.44 2.05v3.83c-1.39-.07-2.74-.53-3.91-1.32-.26-.18-.51-.38-.74-.6-.05 1.91-.03 3.82-.04 5.74 0 2.29-.53 4.59-1.8 6.47-1.39 1.98-3.67 3.31-6.08 3.54-2.7.21-5.46-.66-7.38-2.58C.6 19.43-.23 16.51-.04 13.58c.2-3.15 2.11-6.02 5.07-7.14 1.45-.53 3.01-.63 4.52-.31V10.1c-1.12-.34-2.35-.19-3.37.41-1.19.7-1.92 1.98-1.93 3.37-.01 2.04 1.46 3.82 3.48 4.09 1.62.17 3.25-.66 3.93-2.13.27-.6.38-1.25.36-1.91.01-4.64.01-9.28.01-13.91z"/>
+        </svg>
+    </a>
+
+    <!-- Threads -->
+    <a href="https://www.threads.com/@malik_hn_ywrrr" class="social" aria-label="Threads" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M13.42 2.08c2.19.06 4.3.5 6.13 1.43a.75.75 0 1 1-.7 1.33c-1.55-.79-3.34-1.17-5.2-1.22a7.1 7.1 0 0 0-4.8 1.6c-2.43 2.1-2.5 5.92-.12 8.16 2.03 1.92 5.16 1.83 7.37-.2 1.38-1.28 1.93-3.1 1.62-5.4-.33-2.48-1.88-4.14-4.22-4.52-2.34-.38-4.58.5-5.64 2.22-1 1.62-1.07 3.73-.2 5.3.83 1.5 2.37 2.3 4.24 2.22a5.45 5.45 0 0 0 3.78-1.74.75.75 0 1 1 1.08 1.04 6.94 6.94 0 0 1-5 2.17c-2.47.1-4.55-.98-5.69-3.04-1.2-2.17-1.12-5.07.19-7.22C7.75 3.14 10.5 2.04 13.42 2.08zm1.06 6.07c.1.75-.07 1.38-.5 1.78-.49.44-1.17.43-1.66-.02-.45-.43-.54-1.14-.24-1.8.31-.69.94-1 1.62-.91.46.06.73.34.78.95z"/>
+        </svg>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/193uDvFDNM/" class="social" aria-label="Facebook" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+    </a>
+</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">MALIK<span>.DEV</span></span>
+        <p>Designed &amp; engineered in the studio · Available worldwide.</p>
+      </div>
+      <div class="footer__meta">
+        <span>© <span id="year"></span> Malik Rameez</span>
+        <span class="footer__dot">·</span>
+        <span>All rights reserved</span>
+        <span class="footer__dot">·</span>
+        <a href="#home" class="link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
